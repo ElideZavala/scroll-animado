@@ -11,8 +11,85 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	overflow-x: hidden;
 }
 
 h1 {
+	margin: 40px;
+	text-transform: uppercase;
+}
+
+.box {
+	background-color: rgb(230, 27, 27);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 400px;
+	height: 200px;
 	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 2px 4px 15px rgba( 0, 0, 0, 0.3 );
+	transform: translateX(400%);
+	transition: transform 0.4s ease;
+}
+
+.box:first-of-type {
+	background-image: linear-gradient(135deg, #ff86b7 0, #ff7ebd 8.33%, #ff75c2 16.67%, #f76cc8 25%, #e863ce 33.33%, #d55cd3 41.67%, #be55d8 50%, #a350dd 58.33%, #824fe2 66.67%, #564fe7 75%, #0051eb 83.33%, #0053ef 91.67%, #0056f1 100%);
+}
+
+.box:nth-of-type(3) {
+	background-image: radial-gradient(circle at -11.24% 14.64%, #ffa541 0, #ffb028 5%, #ffba00 10%, #ffc400 15%, #ffcd00 20%, #fad500 25%, #e4dd00 30%, #cde300 35%, #b4e900 40%, #99ee1e 45%, #79f23c 50%, #4ef655 55%, #00f96d 60%, #00fb85 65%, #00fd9d 70%, #00feb6 75%, #00ffce 80%, #00ffe7 85%, #00ffff 90%, #00ffff 95%, #00ffff 100%);
+}
+
+.box:nth-of-type(2) {
+	background-image: radial-gradient(circle at -11.24% 14.64%, #ea6cd3 0, #f566c4 5%, #fd62b4 10%, #ff5fa4 15%, #ff5e94 20%, #ff5f84 25%, #ff6275 30%, #ff6666 35%, #ff6c57 40%, #fa7249 45%, #f2793c 50%, #e9802f 55%, #de8722 60%, #d28d15 65%, #c69307 70%, #b89900 75%, #aa9e00 80%, #9aa208 85%, #8aa618 90%, #78aa26 95%, #65ad34 100%);
+}
+
+.box:nth-of-type(12) {
+	background-image: radial-gradient(circle at 118.3% 31.7%, #0093e5 0, #0091ed 7.14%, #008ef2 14.29%, #008bf6 21.43%, #0087f8 28.57%, #0083f8 35.71%, #007ef6 42.86%, #3c78f2 50%, #6572ec 57.14%, #816be5 64.29%, #9863dc 71.43%, #aa5cd1 78.57%, #ba54c6 85.71%, #c74cb9 92.86%, #d244ac 100%);
+}
+.box:nth-of-type(5) {
+	background-image: linear-gradient(355deg, #67bfff 0, #7abcff 5%, #8cb9ff 10%, #9db5ff 15%, #adb1ff 20%, #bcaefc 25%, #c9aaf6 30%, #d6a6ef 35%, #e0a3e7 40%, #eaa0de 45%, #f29dd5 50%, #f99bcb 55%, #fe9ac1 60%, #ff99b7 65%, #ff99ac 70%, #ff9aa2 75%, #ff9b98 80%, #ff9d8f 85%, #fea087 90%, #f9a37f 95%, #f3a678 100%);
+}
+.box:nth-of-type(6) {
+	background-image: linear-gradient(75deg, #6ea7f9 0, #7fa4f8 16.67%, #8fa0f5 33.33%, #9d9df2 50%, #aa9aee 66.67%, #b696e9 83.33%, #c193e3 100%);
+}
+.box:nth-of-type(7) {
+	background-image: radial-gradient(circle at 20.12% -14.09%, #c5d8ef 0, #c9d6f0 3.33%, #cdd5ef 6.67%, #d1d4ee 10%, #d6d3ed 13.33%, #dad2ec 16.67%, #ded1ea 20%, #e2d0e7 23.33%, #e5cfe4 26.67%, #e9cee1 30%, #ebcede 33.33%, #eecddb 36.67%, #efcdd7 40%, #f1cdd4 43.33%, #f2cdd0 46.67%, #f2cdcd 50%, #f2cdca 53.33%, #f1cec7 56.67%, #f0cfc4 60%, #eecfc2 63.33%, #ecd0c0 66.67%, #ead1be 70%, #e7d2bd 73.33%, #e4d4bc 76.67%, #e0d5bc 80%, #ddd6bc 83.33%, #d9d7bc 86.67%, #d5d8be 90%, #d1d9bf 93.33%, #cddac1 96.67%, #c9dbc3 100%);
+}
+.box:nth-of-type(8) {
+	background-image: radial-gradient(circle at 68.3% 118.3%, #95ccf0 0, #9ccbf2 3.57%, #a4c9f3 7.14%, #acc7f3 10.71%, #b4c5f3 14.29%, #bdc3f1 17.86%, #c5c1ef 21.43%, #cdbfec 25%, #d4bde9 28.57%, #dbbbe4 32.14%, #e1b9df 35.71%, #e7b8da 39.29%, #ebb6d4 42.86%, #efb6ce 46.43%, #f2b5c8 50%, #f4b5c2 53.57%, #f5b5bc 57.14%, #f5b5b6 60.71%, #f5b6b0 64.29%, #f3b7ab 67.86%, #f1b9a6 71.43%, #eebaa2 75%, #eabc9e 78.57%, #e6be9b 82.14%, #e1c099 85.71%, #dcc298 89.29%, #d6c497 92.86%, #d0c698 96.43%, #c9c899 100%);
+
+}
+.box:nth-of-type(9) {
+	background-image: radial-gradient(circle at 9.44% 107.92%, #d4eecd 0, #ceefd1 6.25%, #c9f0d5 12.5%, #c4f1d9 18.75%, #c0f2de 25%, #bcf2e3 31.25%, #b9f2e8 37.5%, #b7f2ed 43.75%, #b5f2f2 50%, #b4f2f7 56.25%, #b4f1fb 62.5%, #b6f0ff 68.75%, #b8f0ff 75%, #bbefff 81.25%, #bfeeff 87.5%, #c3ecff 93.75%, #c8ebff 100%);
+}
+
+.box:nth-of-type(10) {
+	background-image: radial-gradient(circle at 56.16% 120.44%, #0098ba 0, #0097c8 5%, #0096d5 10%, #0095e0 15%, #0093e9 20%, #0090f0 25%, #008cf5 30%, #0088f8 35%, #0084f8 40%, #007ef6 45%, #3c78f2 50%, #6871ec 55%, #8669e3 60%, #9d61d9 65%, #b159cd 70%, #c050c0 75%, #cd47b2 80%, #d840a3 85%, #df3993 90%, #e43683 95%, #e73573 100%);
+}
+
+.box:nth-of-type(11) {
+	background-image: radial-gradient(circle at -20.44% 43.84%, #49b3ff 0, #62b0ff 8.33%, #77acff 16.67%, #8aa9ff 25%, #9ba5fc 33.33%, #aba1f7 41.67%, #b99df2 50%, #c699ec 58.33%, #d295e4 66.67%, #dc92dc 75%, #e58fd3 83.33%, #ec8cc9 91.67%, #f28ac0 100%);
+}
+
+.box:nth-of-type(4) {
+	background-image: linear-gradient(180deg, #adffff 0, #a4ffff 25%, #9df2f2 50%, #97dade 75%, #92c5cb 100%);
+}
+
+.box:nth-of-type(13) {
+	background-image: radial-gradient(circle at 62.28% -19.64%, #ff7e6b 0, #ff6e73 12.5%, #ff5d78 25%, #ff4c7a 37.5%, #f23c78 50%, #d52e74 62.5%, #ba2471 75%, #a21d6e 87.5%, #8d1a6c 100%);	
+}
+
+.box:nth-of-type(even){
+	transform: translate(-400%);
+}
+
+.box.show {
+	transform: translateX(0);
+}
+
+.box h2 {
+	font-size: 45px;
 }
